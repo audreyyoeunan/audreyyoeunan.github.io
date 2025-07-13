@@ -111,7 +111,7 @@ export default function Home() {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center space-x-2 opacity-60 hover:opacity-80 transition-opacity duration-200">
             <Image
-              src="/images/keguri.png"
+              src="./images/keguri.png"
               alt="Keguri"
               width={50}
               height={50}
