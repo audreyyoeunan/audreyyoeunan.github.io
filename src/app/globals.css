@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Roboto Condensed", sans-serif;
+  --font-mono: "Roboto Condensed", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.gradient-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(33, 123, 93, 0.4) 0%, transparent 70%),
+    radial-gradient(circle at 80% 40%, rgba(118, 62, 178, 0.3) 0%, transparent 70%),
+    radial-gradient(circle at 50% 80%, rgba(69, 101, 164, 0.3) 0%, transparent 70%),
+    linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(var(--rotation, 0deg)) scale(1);
+  }
+  33% {
+    transform: translate(-50%, -50%) rotate(calc(var(--rotation, 0deg) + 120deg)) scale(1.1);
+  }
+  66% {
+    transform: translate(-50%, -50%) rotate(calc(var(--rotation, 0deg) + 240deg)) scale(0.9);
+  }
+}
