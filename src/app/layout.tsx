@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 
-const robotoCondensed = Roboto_Condensed({
-  variable: "--font-roboto-condensed",
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-});
-
 export const metadata: Metadata = {
-  title: "My Links",
-  description: "Free Linktree alternative",
-};
+  title: "@audrey.an links",
+  description: "links, links, kegul, kegul"
+}
 
 export default function RootLayout({
   children,
@@ -20,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoCondensed.variable} antialiased gradient-bg`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+      </head>
+      <body className="antialiased gradient-bg">
         {children}
       </body>
     </html>

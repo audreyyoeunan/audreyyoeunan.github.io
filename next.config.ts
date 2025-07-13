@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
   trailingSlash: true,
+  assetPrefix: './',
+  basePath: '',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'http',
