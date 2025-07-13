@@ -9,108 +9,85 @@
   },
   "links": [
     {
-      "id": 1,
       "title": "Conductive Ceramics: Embedding Electronics in Everyday Ceramic Objects",
       "url": "https://dl.acm.org/doi/10.1145/3706599.3720267",
       "description": "Research paper on conductive ceramics and electronics integration",
       "avatar": "./images/avatar-1.jpeg",
-      "order": 1,
       "isActive": true
     },
     {
-      "id": 2,
       "title": "The Clay Studio • Digital Fabrication Studio",
       "url": "https://technical.ly/software-development/art-clay-technology-3d-printer/",
       "description": "Article about The Clay Studio's digital fabrication initiatives",
       "avatar": "./images/avatar-2.jpeg",
-      "order": 2,
       "isActive": true
     },
     {
-      "id": 4,
       "title": "Wishful Things • Artist-in-Residence Exhibition",
       "url": "https://calendar.college.harvard.edu/event/audrey-an-wishful-things-artist-in-residence-exhibition",
       "description": "Harvard College Calendar event for the exhibition",
       "avatar": "./images/avatar-4.jpeg",
-      "order": 4,
       "isActive": true
     },
     {
-      "id": 5,
       "title": "Artsy • Technology in Art: \"Calibration\"",
       "url": "https://www.artsy.net/viewing-room/laisun-keane-technology-in-art-star-a-group-exhibition-calibration",
       "description": "Artsy viewing room for the Calibration exhibition",
       "avatar": "./images/avatar-5.jpeg",
-      "order": 5,
       "isActive": true
     },
     {
-      "id": 6,
       "title": "Calibration • May 24th - July 7th • Laisun Keane",
       "url": "https://www.laisunkeane.com/exhibitions/55-calibration-audrey-an-raina-lee-cathy-lu-and-danyang/",
       "description": "Gallery exhibition featuring Audrey An and other artists",
       "avatar": "./images/avatar-6.jpeg",
-      "order": 6,
       "isActive": true
     },
     {
-      "id": 7,
       "title": "Featured Artists Series Ekphrastic Showcase",
       "url": "http://www.gasherpress.com/fas",
       "description": "Gasher Press featured artists showcase",
       "avatar": "./images/avatar-7.png",
-      "order": 7,
       "isActive": true
     },
     {
-      "id": 8,
       "title": "Archives Party 06: Never a Monument",
       "url": "https://libcal.gsd.harvard.edu/calendar/support/archiveparty06",
       "description": "Harvard GSD archives party event",
       "avatar": "./images/avatar-8.jpeg",
-      "order": 8,
       "isActive": true
     },
     {
-      "id": 9,
       "title": "Clay, Hand & Machine: Computer-Aided Clay Processes • Anderson Ranch Arts Center",
       "url": "https://www.andersonranch.org/workshops/workshop/clay-hand-and-machine-computer-aided-clay-processes-c1014-24/",
       "description": "Workshop on computer-aided clay processes",
       "avatar": "./images/avatar-9.jpeg",
-      "order": 9,
       "isActive": true
     },
     {
-      "id": 11,
       "title": "Ceramics Program, Office for the Arts at Harvard • Artists-In-Residence",
       "url": "https://ofa.fas.harvard.edu/2023-24-artists-residence",
       "description": "Harvard Ceramics Program artist residency information",
       "avatar": "./images/avatar-11.jpeg",
-      "order": 11,
       "isActive": true
     },
     {
-      "id": 12,
       "title": "Ceramics Monthly • 2023 Emerging Artist: Audrey An",
       "url": "https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/2023-emerging-artist-audrey-an-brighton-massachusetts",
       "description": "Ceramics Monthly feature on Audrey An as 2023 Emerging Artist",
       "avatar": "./images/avatar-12.jpeg",
-      "order": 12,
       "isActive": true
     },
     {
-      "id": 13,
       "title": "Website",
       "url": "http://www.audreyan.com",
       "description": "Personal website and portfolio",
       "avatar": "./images/avatar-13.jpeg",
-      "order": 13,
       "isActive": true
     }
   ],
   "socialLinks": [
     {
-      "id": 1,
       "type": "email",
       "url": "mailto:audreyyoeunan@gmail.com",
       "title": "Email",
