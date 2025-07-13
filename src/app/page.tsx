@@ -32,7 +32,6 @@ interface SiteData {
 
 export default function Home() {
   const [data] = useState<SiteData>(siteData);
-  const setKeguriClicks = useState(0)[1];
 
 
 
@@ -117,14 +116,7 @@ export default function Home() {
               height={50}
               className="opacity-80"
               onClick={() => {
-                setKeguriClicks((prev) => {
-                  const next = prev + 1;
-                  if (next === 3) {
-                    alert('ke-gul, ke-gul');
-                    return 0;
-                  }
-                  return next;
-                });
+                alert('ke-gul, ke-gul');
               }}
               style={{ cursor: 'pointer' }}
             />
