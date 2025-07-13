@@ -2,6 +2,8 @@
 
 A static link tree site hosted on GitHub Pages.
 
+<!-- Deployment test -->
+
 ## How to Update Links
 
 You can easily update the links by editing the `public/data.json` file:
