@@ -1,10 +1,10 @@
-# Link Tree Site
+# Keguri Links 🐸
 
-A beautiful, static link tree site hosted on GitHub Pages.
+A static link tree site hosted on GitHub Pages.
 
 ## How to Update Links
 
-Your girlfriend can easily update the links by editing the `public/data.json` file:
+You can easily update the links by editing the `public/data.json` file:
 
 ### 1. Edit the Profile
 Update the profile section in `public/data.json`:
@@ -39,9 +39,7 @@ Add new links to the `links` array:
 ### 3. Link Properties
 - **title**: The name of the link (e.g., "Instagram")
 - **url**: The full URL to link to
-- **description**: Optional description
 - **avatar**: Path to icon image (optional)
-- **order**: Number for sorting (1, 2, 3, etc.)
 - **isActive**: Set to `false` to hide a link
 
 ### 4. Adding Images
@@ -64,6 +62,3 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the result.
 
-## Deployment
-
-This site is designed to be deployed on GitHub Pages or Vercel for free hosting.
