@@ -123,9 +123,12 @@ export default function Home() {
           <Image
             src="./images/lotus.png"
             alt="Lotus"
-            width={50}
-            height={50}
-            className="opacity-60 hover:opacity-80 transition-opacity duration-200 mx-auto"
+            width={40}
+            height={40}
+            onClick={() => {
+              alert('...');
+            }}
+            className="opacity-60 hover:opacity-80 transition-opacity duration-200 mx-auto cursor-pointer"
           />
         </div>
 
