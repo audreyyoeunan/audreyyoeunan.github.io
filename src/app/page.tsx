@@ -1,8 +1,11 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+
+// Import the JSON data directly
+import siteData from '../../public/data.json';
 
 interface Link {
   id: number;
@@ -28,45 +31,10 @@ interface SiteData {
 }
 
 export default function Home() {
-  const [data, setData] = useState<SiteData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [data] = useState<SiteData>(siteData);
   const setKeguriClicks = useState(0)[1];
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Fetch data from the static JSON file
-        const response = await fetch('/data.json');
-        const siteData: SiteData = await response.json();
-        setData(siteData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
 
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900"></div>
-      </div>
-    );
-  }
-
-  if (!data) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Error Loading Site</h1>
-          <p className="text-gray-600">Please check the data.json file</p>
-        </div>
-      </div>
-    );
-  }
 
   const { profile, links } = data;
   const activeLinks = links.filter(link => link.isActive).sort((a, b) => a.order - b.order);
