@@ -12,7 +12,7 @@ Update the profile section in `public/data.json`:
 ```json
 {
   "profile": {
-    "name": "Your Girlfriend's Name",
+    "name": "Keguri",
     "bio": "Artist, creator, and all-around amazing person ✨",
     "profilePicture": "/profile.jpg",
     "backgroundColor": "#ffffff",
@@ -28,7 +28,7 @@ Add new links to the `links` array:
 {
   "id": 5,
   "title": "TikTok",
-  "url": "https://tiktok.com/@yourgirlfriend",
+  "url": "https://tiktok.com/@keguri",
   "description": "Check out my short videos",
   "avatar": "/tiktok-icon.png",
   "order": 5,
