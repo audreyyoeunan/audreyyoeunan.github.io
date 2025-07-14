@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
+import HoverCard from '../components/HoverCard';
 
 // Import the JSON data directly
 import siteData from '../../public/data.json';
@@ -58,10 +59,9 @@ export default function Home() {
             <h1 className="text-xl font-light mb-2 tracking-[.3rem]">audrey yoeun an</h1>
           </a>
 
-                    {/* Keguri Logo with Speech Bubble */}
+                    {/* Keguri Logo with Hover Card */}
           <div className="mt-4 flex justify-center items-start">
-            <div className="relative">
-              {/* Frog */}
+            <HoverCard content="ke-gul, ke-gul" position="top">
               <div className="opacity-60 hover:opacity-80 transition-opacity duration-200">
                 <Image
                   src="./images/keguri.png"
@@ -69,13 +69,10 @@ export default function Home() {
                   width={40}
                   height={40}
                   className="opacity-80"
-                  onClick={() => {
-                    alert('ke-gul, ke-gul');
-                  }}
                   style={{ cursor: 'pointer' }}
                 />
               </div>
-            </div>
+            </HoverCard>
           </div>
         </div>
 
@@ -120,16 +117,15 @@ export default function Home() {
 
         {/* Lotus Image */}
         <div className="mt-8 text-center">
-          <Image
-            src="./images/lotus.png"
-            alt="Lotus"
-            width={40}
-            height={40}
-            onClick={() => {
-              alert('...');
-            }}
-            className="opacity-60 hover:opacity-80 transition-opacity duration-200 mx-auto cursor-pointer"
-          />
+          <HoverCard content="..." position="top">
+            <Image
+              src="./images/lotus.png"
+              alt="Lotus"
+              width={40}
+              height={40}
+              className="opacity-60 hover:opacity-80 transition-opacity duration-200 mx-auto cursor-pointer"
+            />
+          </HoverCard>
         </div>
 
 
