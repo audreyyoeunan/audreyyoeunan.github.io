@@ -12,18 +12,6 @@ const nextConfig: NextConfig = {
       {
         protocol: 'http',
         hostname: 'localhost',
-        port: '1337',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'localhost',
-        port: '1337',
-        pathname: '/**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
         port: '',
         pathname: '/**',
       },

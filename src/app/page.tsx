@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className="text-xl font-light mb-2 tracking-[.3rem]">audrey yoeun an</h1>
           </a>
 
-                    {/* Keguri Logo with Hover Card */}
+          {/* Keguri Logo with Hover Card */}
           <div className="mt-4 flex justify-center items-start">
             <HoverCard content="ke-gul, ke-gul" position="top">
               <div className="opacity-60 hover:opacity-80 transition-opacity duration-200">
