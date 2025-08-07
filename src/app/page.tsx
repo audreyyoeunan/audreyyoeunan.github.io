@@ -8,6 +8,12 @@ import HoverCard from '../components/HoverCard';
 // Import the JSON data directly
 import siteData from '../../public/data.json';
 
+function isAfter6PMEST() {
+  const now = new Date();
+  const estHour = now.toLocaleString("en-US", { timeZone: "America/New_York", hour: "numeric", hour12: false });
+  return Number(estHour) >= 18 || Number(estHour) < 6;
+}
+
 interface Link {
   title: string;
   url: string;
@@ -42,9 +48,19 @@ export default function Home() {
   const { profile, links } = data;
   const activeLinks = links.filter(link => link.isActive);
 
+  const isNight = isAfter6PMEST();
+
+  // Determine which image to show
+  const logoSrc = isNight ? "./images/bueongi.png" : "./images/keguri.png";
+  const logoAlt = isNight ? "Bueongi" : "Keguri";
+
+  // Determine bottom image
+  const bottomImageSrc = isNight ? "./images/tree.png" : "./images/lotus.png";
+  const bottomImageAlt = isNight ? "Tree" : "Lotus";
+
   return (
     <div
-      className="min-h-screen py-8 px-4"
+      className={`min-h-screen py-8 px-4 ${isNight ? 'night-mode' : ''}`}
       style={{ backgroundColor: profile.backgroundColor, color: profile.textColor }}
     >
       <div className="max-w-md mx-auto">
@@ -59,16 +75,16 @@ export default function Home() {
             <h1 className="text-xl font-light mb-2 tracking-[.3rem]">audrey yoeun an</h1>
           </a>
 
-          {/* Keguri Logo with Hover Card */}
+          {/* Conditional Logo with Hover Card */}
           <div className="mt-4 flex justify-center items-start">
-            <HoverCard content="ke-gul, ke-gul" position="top">
-              <div className="opacity-60 hover:opacity-80 transition-opacity duration-200">
+            <HoverCard content={!isNight ? "ke-gul, ke-gul" : "bu-eong, bu-eong"} position="top">
+              <div className="opacity-80 hover:opacity-100 transition-opacity duration-200 overflow-hidden">
                 <Image
-                  src="./images/keguri.png"
-                  alt="Keguri"
+                  src={logoSrc}
+                  alt={logoAlt}
                   width={40}
                   height={40}
-                  className="opacity-80"
+                  className="opacity-100"
                   style={{ cursor: 'pointer' }}
                 />
               </div>
@@ -80,7 +96,7 @@ export default function Home() {
         <div className="space-y-4">
           {activeLinks.length === 0 ? (
             <div className="text-center py-8">
-              <p className="text-opacity-60" style={{ color: profile.textColor }}>
+              <p className="text-opacity-80" style={{ color: profile.textColor }}>
                 No links available yet.
               </p>
             </div>
@@ -115,15 +131,15 @@ export default function Home() {
           )}
         </div>
 
-        {/* Lotus Image */}
+        {/* Conditional Bottom Image */}
         <div className="mt-8 text-center">
           <HoverCard content="..." position="top">
             <Image
-              src="./images/lotus.png"
-              alt="Lotus"
+              src={bottomImageSrc}
+              alt={bottomImageAlt}
               width={40}
               height={40}
-              className="opacity-60 hover:opacity-80 transition-opacity duration-200 mx-auto cursor-pointer"
+              className="opacity-80 hover:opacity-100 transition-opacity duration-200 mx-auto cursor-pointer"
             />
           </HoverCard>
         </div>
