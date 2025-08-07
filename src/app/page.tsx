@@ -10,7 +10,12 @@ import siteData from '../../public/data.json';
 
 function isAfter6PMEST() {
   const now = new Date();
-  const estHour = now.toLocaleString("en-US", { timeZone: "America/New_York", hour: "numeric", hour12: false });
+  // Always get the current hour in EST, regardless of server timezone
+  const estHour = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "numeric",
+    hour12: false
+  }).format(now);
   return Number(estHour) >= 18 || Number(estHour) < 6;
 }
 
