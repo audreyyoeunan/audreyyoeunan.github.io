@@ -4,8 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import HoverCard from '../components/HoverCard';
-
-// Import the JSON data directly
 import siteData from '../../public/data.json';
 
 function isAfter6PMEST() {
