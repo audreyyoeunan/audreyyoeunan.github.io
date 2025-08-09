@@ -6,15 +6,15 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import HoverCard from '../components/HoverCard';
 import siteData from '../../public/data.json';
 
-function isAfter6PMEST() {
+function isNightTime() {
   const now = new Date();
-  // Always get the current hour in EST, regardless of server timezone
-  const estHour = new Intl.DateTimeFormat("en-US", {
-    timeZone: "America/New_York",
-    hour: "numeric",
-    hour12: false
-  }).format(now);
-  return Number(estHour) >= 18 || Number(estHour) < 6;
+
+  // Get current time in EST
+  const estTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+  const hour = estTime.getHours();
+
+  // Night time is from 6 PM (18) to 6 AM (6)
+  return hour >= 18 || hour < 6;
 }
 
 interface Link {
@@ -51,7 +51,7 @@ export default function Home() {
   const { profile, links } = data;
   const activeLinks = links.filter(link => link.isActive);
 
-  const isNight = isAfter6PMEST();
+  const isNight = isNightTime();
 
   // Determine which image to show
   const logoSrc = isNight ? "./images/bueongi.png" : "./images/keguri.png";
