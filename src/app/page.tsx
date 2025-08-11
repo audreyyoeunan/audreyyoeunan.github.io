@@ -80,7 +80,7 @@ export default function Home() {
 
           {/* Conditional Logo with Hover Card */}
           <div className="mt-4 flex justify-center items-start">
-            <HoverCard content={!isNight ? "ke-gul, ke-gul" : "bu-eong, bu-eong"} position="top">
+            <HoverCard content={isNight ? "bu-eong, bu-eong" : "ke-gul, ke-gul"} position="top">
               <div className="opacity-80 hover:opacity-100 transition-opacity duration-200 overflow-hidden">
                 <Image
                   src={logoSrc}
