@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import HoverCard from '../components/HoverCard';
@@ -47,11 +47,15 @@ interface SiteData {
 
 export default function Home() {
   const [data] = useState<SiteData>(siteData);
+  const [isNight, setIsNight] = useState(false);
 
   const { profile, links } = data;
   const activeLinks = links.filter(link => link.isActive);
 
-  const isNight = isNightTime();
+  useEffect(() => {
+    setIsNight(isNightTime())
+  }, [])
+
 
   // Determine which image to show
   const logoSrc = isNight ? "./images/bueongi.png" : "./images/keguri.png";
