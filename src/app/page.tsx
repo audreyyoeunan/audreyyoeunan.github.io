@@ -58,7 +58,7 @@ export default function Home() {
 
 
   // Determine which image to show
-  const logoSrc = isNight ? "./images/bueongi.png" : "./images/keguri.png";
+  const logoSrc = isNight ? "./images/owl.webp" : "./images/keguri.webp";
   const logoAlt = isNight ? "Bueongi" : "Keguri";
 
   // Determine bottom image

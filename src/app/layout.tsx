@@ -13,12 +13,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
-      </head>
+        <head>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet" />
+          <link rel="prefetch" href="/images/keguri.webp" />
+          <link rel="prefetch" href="/images/owl.webp" />
+          <link rel="prefetch" href="/images/tree.png" />
+          <link rel="prefetch" href="/images/lotus.png" />
+        </head>
       <body className="antialiased gradient-bg">
         {children}
       </body>
