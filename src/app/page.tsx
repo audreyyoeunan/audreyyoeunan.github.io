@@ -114,7 +114,7 @@ export default function Home() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full p-4 bg-white/40 bg-opacity-10 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105  border-opacity-20 font-light"
+                className="block w-full p-4 bg-white/50 bg-opacity-10 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105  border-opacity-20 font-light"
               >
                 <div className="flex items-center space-x-4">
                   {link.avatar && (
