@@ -72,7 +72,7 @@ export default function Home() {
     >
       <div className="max-w-md mx-auto">
         {/* Profile Section */}
-        <div className="text-center pb-6 backdrop-blur-md">
+        <div className="text-center pb-6 relative z-10">
           <a
             href="https://www.audreyan.com"
             target="_blank"
