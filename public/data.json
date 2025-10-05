@@ -9,6 +9,12 @@
   },
   "links": [
     {
+      "url": "https://events.temple.edu/atlas-for-post-disciplinary-design",
+      "title": "Atlas for Post-Disciplinary Design",
+      "description": "Emergent Paradigms for the Post-Anthropos",
+      "isActive": true
+    }
+    {
       "title": "Conductive Ceramics: Embedding Electronics in Everyday Ceramic Objects",
       "url": "https://dl.acm.org/doi/10.1145/3706599.3720267",
       "description": "Research paper on conductive ceramics and electronics integration",
