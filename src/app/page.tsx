@@ -10,7 +10,7 @@ function isNightTime() {
   const now = new Date();
 
   // Get current time in EST
-  const estTime = new Date(now.toLocaleString("en-US", {timeZone: "America/New_York"}));
+  const estTime = new Date(now.toLocaleString("en-US", { timeZone: "America/New_York" }));
   const hour = estTime.getHours();
 
   // Night time is from 6 PM (18) to 6 AM (6)
@@ -118,13 +118,13 @@ export default function Home() {
               >
                 <div className="flex items-center space-x-4">
                   {link.avatar && (
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 w-16 h-16">
                       <Image
                         src={link.avatar}
                         alt={link.title}
                         width={64}
                         height={64}
-                        className="rounded-lg"
+                        className="rounded-lg w-full h-full object-cover"
                       />
                     </div>
                   )}
