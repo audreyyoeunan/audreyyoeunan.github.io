@@ -9,6 +9,20 @@
   },
   "links": [
     {
+      "url": "https://www.andersonranch.org/workshops/workshop/advanced-mentored-studies-centering-a-ceramic-studio-practice-through-material-and-meaning-c1112-26/",
+      "title": "Advanced Mentored Studies • August 2026 • Anderson Ranch",
+      "description": "Three-year advanced program co-led by Audrey An and Shoji Satake for ceramic artists aiming to deepen their practice",
+      "avatar": "./images/shoji-satake-work.png",
+      "isActive": true
+    },
+    {
+      "url": "https://www.alfred.edu/about/summers-at-alfred/alfred-summer-arts/arts-workshops/3d-printing-ceramics.cfm",
+      "title": "3D Printing: From Plastic to Clay • July 2026 • Alfred University",
+      "description": "Two-week workshop bridging digital design and traditional craft, teaching 3D modeling, scanning, and fabrication through printing and casting",
+      "avatar": "./images/alfred-3d-printing.jpg",
+      "isActive": true
+    },
+    {
       "url": "https://blafferartmuseum.org/uncanny-in-between/",
       "title": "The Uncanny In-Between: January 10 - March 14, 2026",
       "description": "An exhibition and archival project that explores a diverse range of works from five Korean ceramic artists",
