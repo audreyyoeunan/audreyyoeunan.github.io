@@ -9,6 +9,13 @@
   },
   "links": [
     {
+      "url": "https://palmermuseum.psu.edu/exhibition/dreaming-american-futures-invitational-250/",
+      "title": "Dreaming American Futures Invitational",
+      "description": "Palmer Museum exhibition",
+      "avatar": "./images/parents<3.webp",
+      "isActive": true
+    },
+    {
       "url": "https://www.lucylacoste.com/",
       "title": "Evolving Clay: Where Tradition Meets Transformation",
       "description": "Curated by Michael Dika",
