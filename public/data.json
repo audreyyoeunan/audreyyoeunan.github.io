@@ -9,6 +9,13 @@
   },
   "links": [
     {
+      "url": "https://www.centerforcraft.org/grants-and-fellowships/teaching-artist-cohort",
+      "title": "Teaching Artist Cohort 2026 • Center for Craft",
+      "description": "Center for Craft Teaching Artist Cohort",
+      "avatar": "./images/avatar-center-for-craft.jpeg",
+      "isActive": true
+    },
+    {
       "url": "https://palmermuseum.psu.edu/exhibition/dreaming-american-futures-invitational-250/",
       "title": "Dreaming American Futures: Invitational 250 • Palmer Museum of Art",
       "description": "Palmer Museum exhibition",
