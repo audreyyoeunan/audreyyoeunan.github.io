@@ -133,6 +133,13 @@
       "description": "Personal website and portfolio",
       "avatar": "./images/avatar-13.jpeg",
       "isActive": true
+    },
+    {
+      "title": "Shared Earth • RISD Museum",
+      "url": "https://risdmuseum.org/exhibitions-events/events/shared-earth-contemporary-korean-artists-across-continents",
+      "description": "Shared Earth — Contemporary Korean Artists Across Continents (RISD Museum)",
+      "avatar": "./images/shared-earth-risd.jpg",
+      "isActive": true
     }
   ],
   "socialLinks": [
