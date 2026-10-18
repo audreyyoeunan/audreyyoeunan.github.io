@@ -9,6 +9,13 @@
   },
   "links": [
     {
+      "title": "Shared Earth • RISD Museum",
+      "url": "https://risdmuseum.org/exhibitions-events/events/shared-earth-contemporary-korean-artists-across-continents",
+      "description": "Shared Earth — Contemporary Korean Artists Across Continents (RISD Museum)",
+      "avatar": "./images/shared-earth-risd.jpg",
+      "isActive": true
+    },
+    {
       "url": "https://www.centerforcraft.org/grants-and-fellowships/teaching-artist-cohort",
       "title": "Teaching Artist Cohort 2026 • Center for Craft",
       "description": "Center for Craft Teaching Artist Cohort",
@@ -132,13 +139,6 @@
       "url": "http://www.audreyan.com",
       "description": "Personal website and portfolio",
       "avatar": "./images/avatar-13.jpeg",
-      "isActive": true
-    },
-    {
-      "title": "Shared Earth • RISD Museum",
-      "url": "https://risdmuseum.org/exhibitions-events/events/shared-earth-contemporary-korean-artists-across-continents",
-      "description": "Shared Earth — Contemporary Korean Artists Across Continents (RISD Museum)",
-      "avatar": "./images/shared-earth-risd.jpg",
       "isActive": true
     }
   ],
